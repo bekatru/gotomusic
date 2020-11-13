@@ -37,3 +37,8 @@
   }
 }
 
+@media only screen and (min-width: 725px) {
+  .back {
+    transform: translateZ(-10px) scale(5);
+  }
+}
