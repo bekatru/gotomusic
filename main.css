@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+#menu {
+	display: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Eagle Lake', cursive;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+button {
+	outline: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	width: 200px;
+	height: 45px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background: rgba(250, 250, 250, 0.8);
+
+	margin: 5px;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container {
+	max-width: 1280px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/*NAVBAR*/
+nav {
+	position: fixed;
+	top: 0;
+}
+
+#burger {
+	width: 35px;
+	height: 35px;
+	padding: 7.5px;
+
+	justify-content: space-around;
+}
+
+#burger div {
+	display: block;
+	content: "";
+	background: black;
+	width: 35px;
+	height: 2px;
+}
+
+/*Home Page*/
+#home {
+	height: 100vh;
+}
+
+#home h1 {
+	font-size: 48px;
+}
+
+#home .container {
+	height: 60vh;
+	justify-content: space-between;
+
+	position: relative;
+	top: 40%;
+}
+
+#scroll {
+	width: 30px;
+}
+
+/*Contact Page*/
+#contact {
+	height: 100vh;
+	justify-content: space-around;
+}
+
+#contact p {
+	text-align: center;
+}
+
+.logo {
+	opacity: 0.5;
+}
+
+/*About Page*/
+#about {
+	height: 100vh;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#about h2 {
+	position: relative;
+	top: 100px;
+}
+
+#about p {
+	position: relative;
+	bottom: 50px;
+}
+
+
+
