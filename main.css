@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
+.parallax {
+	scroll-behavior: smooth;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -189,4 +193,3 @@ footer {
 		display: none;
 	}
 }
-
