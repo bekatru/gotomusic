@@ -13,27 +13,6 @@
 			<img class='background' src="assets/images/bg-img.jpg">
 		</div>
 		<div class="parallax__layer base">
-			<nav> <!-- Navigation Bar-->
-				<div id="menu">
-					<ul id="menu-items">
-						<li><a href="#home">home</a></li> <!-- links to the main page -->
-						<li><a href="#about">about</a></li> <!-- links to the about page -->
-						<li><a href="samplepage.html">sample page</a></li> <!-- links to the sample page -->
-						<li><a href="#CONTACT">contact</a></li> <!-- Insert the Google form link instead of #CONTACT-->
-						<li>
-							<img src="assets/images/facebook-black.png" alt="facebook">
-							<img src="assets/images/gmail-black.png" alt="gmail">
-							<img src="assets/images/instagram-black.png" alt="instagram">
-						</li>
-					</ul>
-				</div>
-				<div id="burger" class="flex-col">
-					<div class="topline"></div>
-					<div class="middleline"></div>
-					<div class="bottomline"></div>
-				</div>
-			</nav>
-
 			<header id="home"> <!--Home Page-->
 				<div class="container flex-col">
 					<h1>gotomusic</h1>
@@ -43,23 +22,33 @@
 					</div>
 				</div>
 			</header>
+			<div class="container desktop">
+				<section id="contact" class="flex-col"> <!-- Second Page-->
+					<p>we are taking page requests so if you<br>
+					have released music, leave your contact<br> 
+					here and we will get back.</p>
+					<div class="flex-col">
+						<button><h4>sample page</h4></button>
+						<button><h4>contact</h4></button>
+					</div>
+					<h4 class="logo">gotomusic</h4>
+				</section>
 
-			<section id="contact" class="container flex-col"> <!-- Second Page-->
-				<p>we are taking page requests so if you<br>
-				have released music, leave your contact<br> 
-				here and we will get back.</p>
-				<div class="flex-col">
-					<button><h4>sample page</h4></button>
-					<button><h4>contact</h4></button>
-				</div>
+				<section id="about" class="flex-col"> <!-- About Page-->
+					<h2>about</h2>
+					<p>Gotomusic is created by misicians for musicians. Our mission is to help independant artists in India connect with their listeners and a create community around their art.</p>
+				</section>
+			</div>
+			<footer class="flex-col">
 				<h4 class="logo">gotomusic</h4>
-			</section>
-
-			<section id="about" class="container flex-col"> <!-- About Page-->
-				<h2>about</h2>
-				<p>Gotomusic is created by misicians for musicians. Our mission is to help independant artists in India connect with their listeners and a create community around their art.</p>
-			</section>
+				<div class="social-media">
+					<img src="assets/images/facebook-black.png" alt="facebook">
+					<img src="assets/images/gmail-black.png" alt="gmail">
+					<img src="assets/images/instagram-black.png" alt="instagram">
+				</div>
+			</footer>
 		</div>
 	</div>
+
 </body>
 </html>

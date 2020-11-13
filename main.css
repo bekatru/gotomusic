@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
-#menu {
-	display: none;
-}
-
 * {
 	margin: 0;
 	padding: 0;
@@ -60,27 +56,6 @@ button {
 	margin: 0 auto;
 }
 
-/*NAVBAR*/
-nav {
-	position: fixed;
-	top: 0;
-}
-
-#burger {
-	width: 35px;
-	height: 35px;
-	padding: 7.5px;
-
-	justify-content: space-around;
-}
-
-#burger div {
-	display: block;
-	content: "";
-	background: black;
-	width: 35px;
-	height: 2px;
-}
 
 /*Home Page*/
 #home {
@@ -101,12 +76,15 @@ nav {
 
 #scroll {
 	width: 30px;
+	margin-bottom: 30px;
 }
 
 /*Contact Page*/
 #contact {
+	box-sizing: border-box;
 	height: 100vh;
-	justify-content: space-around;
+	padding: 60px 0;
+	justify-content: space-between;
 }
 
 #contact p {
@@ -119,20 +97,96 @@ nav {
 
 /*About Page*/
 #about {
-	height: 100vh;
-	justify-content: space-between;
+	height: 90vh;
+	justify-content: space-around;
 	align-items: flex-start;
 }
 
 #about h2 {
-	position: relative;
-	top: 100px;
+	margin-top: 150px;
 }
 
 #about p {
-	position: relative;
-	bottom: 50px;
+	margin-top: 150px;
 }
 
+.social-media img {
+	height: 40px;
+	padding: 10px;
+}
 
+footer {
+	height: 10vh;
+}
+
+@media only screen and (min-width: 725px) {
+	.container {
+		padding: 0 60px;
+	}
+
+	#home h1 {
+		font-size: 70px;
+	}
+
+	h4 {
+		font-size: 22px;
+	}
+
+	body {
+		font-size: 24px;
+		line-height: 40px;
+	}
+
+	button {
+		width: 300px;
+		height: 60px;
+		margin: 20px;
+	}
+
+	#about p {
+		width: 560px;
+		margin-top: 300px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.desktop {
+		display: flex;
+	}
+
+	#about {
+		width: 50%;
+		order:0;
+		justify-content: flex-end;
+	}
+
+	#about h2 {
+		margin: 0;
+	}
+
+	#about p {
+		margin-top: 50px;
+		width: 480px;
+	}
+
+	#contact {
+		width: 50%;
+		order: 1;
+		align-items: flex-end;
+		justify-content: flex-end;
+	}
+
+	#contact p {
+		width: 480px;
+		text-align: right;
+	}
+
+	button {
+		margin-right: 0;
+	}
+
+	#contact .logo {
+		display: none;
+	}
+}
 
