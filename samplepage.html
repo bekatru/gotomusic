@@ -7,19 +7,23 @@
 	<title>sample page</title>
 </head>
 <body>
-	<div id="nav">
-			<h1>FLUME</h1>
-			<div id="media">
-				<img src="assets/images/apple.png">
-				<img src="assets/images/nav-spotify.png">
-				<img src="assets/images/nav-youtube.png">
-				<img src="assets/images/nav-soundcloud.png">
-				<img src="assets/images/mail.png">
-				<img src="assets/images/share-twitter.png">
-				<img src="assets/images/share-insta.png">
-			</div>
-	</div>
-
+	<nav>
+		<div class="logo"><h1>FLUME</h1></div>
+		<ul class="nav-links">
+			<li><a id="apple-link" href="#"><img src="assets/images/apple.png"></a></li>
+			<li><a id="spotify-link" href="#"><img src="assets/images/nav-spotify.png"></a></li>
+			<li><a id="youtube-link" href="#"><img src="assets/images/nav-youtube.png"></a></li>
+			<li><a id="mail-link" href="#"><img src="assets/images/mail.png"></a></li>
+			<li><a id="twitter-link" href="#"><img src="assets/images/share-twitter.png"></a></li>
+			<li><a id="insta-link" href="#"><img src="assets/images/share-insta.png"></a></li>
+		</ul>
+		<div class="burger">
+			<div class="first"></div>
+			<div class="second"></div>
+			<div class="third"></div>
+		</div>
+	</nav>
+	<script type="text/javascript" src='nav.js'></script>
 		
 
 	<div class="wrapper">
@@ -44,10 +48,11 @@
 					<button id='buy-btn'>BUY NOW</button>
 				</div>
 			</div>
-
 		</header>
-	 	<section>
-			<ol>
+
+	 	<section class="tracklist">
+	 		<h2 class="heading">TRACKLIST</h2>
+			<ol >
 				<li>Hi This Is Flume</li>
 				<li>Ecdysis</li>
 				<li>High Beams</li>
@@ -63,6 +68,7 @@
 		</section>
 
 		<section>
+			<h2 class="heading">VIDEO</h2>
 			<button id="youtube">
 				<img id="video" src="assets/images/maxres.jpg">
 				<img id="play-btn" src="assets/images/youtube-play-btn.png" width="100">
@@ -70,6 +76,7 @@
 		</section>
 
 		<section>
+			<h2 class="heading">MERCH</h2>
 			<div class="merch">
 				<div class="t-shirt">
 					<div class="merch-item">
@@ -101,6 +108,7 @@
 		</section>
 
 		<footer>
+			<h2 class="heading">MORE</h2>
 			<button id="more">MORE MUSIC</button>
 			<h3 id="share">SHARE</h3 >
 			<ul>
