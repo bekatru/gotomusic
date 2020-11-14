@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+	box-sizing: content-box;
+	max-width: 925px;
+	padding: 0 25px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 14px;
+	font-weight: 400;
+	color: grey;
+}
+
+p {
+	font-size: 14px;
+}
+
+header {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cover {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 40px;
+	max-width: 480px;
+	max-height: 400px;
+}
+
+.text {
+	max-width: 500px;
+}
+
+.title {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.date {
+	text-align: center;
+}
+
+.description {
+	text-align: justify;
+	margin-top: 15px;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.streaming img{
+	height: 50px;
+}
+
+.streaming {
+	width: 230px;
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+	outline: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	width: 230px;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 25px;
+}
+
+#buy-btn {
+	margin-top: 15px;
+}
+
+ol {
+	list-style: none;
+	counter-reset: item;
+}
+
+li {
+	counter-increment: item;
+	font-size: 24px;
+	height: 50px;
+	width: 100%;
+	margin: 15px 0;
+
+	border: 2px solid black;
+	border-radius: 15px;
+
+	display: flex;
+	align-items: center;
+}
+
+li:before {
+	margin-right: 30px;
+	margin-left: 15px;
+	content: counter(item);
+	text-align: center;
+	display: inline-block;
+	color: grey;
+}
+
+li:after {
+	display: inline-block;
+	content: "";
+
+	height: 30px;
+	width: 30px;
+
+	background-image: url('assets/images/play-btn.png');
+	background-size: 30px 30px;
+
+	margin-left: auto;
+	margin-right: 15px;
+}
+
+.merch img{
+	width: 100%;
+}
+
+.vinyl img {
+	padding: 20px;
+}
+
+.merch h2{
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.vinyl, .t-shirt {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} 
+
+.merch-item {
+	width: 300px;
+}
+
+.merch-item {
+	width: 300px;
+	margin: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+#youtube {
+	border: none;
+	width: auto;
+	height: auto;
+	position: relative;
+	margin: 10vh 0;
+}
+
+#video {
+	width: 100%
+}
+
+#play-btn {
+	width: 20%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 10vh 0;
+
+}
+
+#more {
+	font-size: 20px;
+	border: 2px solid;
+	color: grey;
+}
+
+#more:hover {
+	color: black;
+}
+
+#share {
+	margin-top: 20vh;
+	font-size: 18px;
+}
+
+footer ul {
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+	margin-top: 20px;
+}
+
+footer img {
+	width: 40px;
+}
+
+footer ul div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 60px;
+	width: 60px;
+	border: 1px solid;
+	border-radius: 50%;
+
+}
+
+@media only screen and (min-width: 925px) {
+	#nav {
+		height: 50px;
+		width: 100vw;
+		background: white;
+		position: fixed;
+		box-shadow: 0px 5px 5px grey;
+		z-index: 3;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	#nav h1{
+		font-size: 36px;
+		line-height: 50px;
+		text-align: left;
+		margin-left: 50px;
+	}
+
+	#media {
+		margin-right: 50px;
+	}
+
+	#media img {
+		width: 30px;
+		margin-right: 10px; 
+	}
+
+	header {
+		flex-direction: row;
+	}
+
+	.cover {
+		width: 440px;
+		padding: 0 40px 0 0;
+	}
+
+	.info {
+		height: 400px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.title {
+		font-size: 36px;
+		text-align: left;
+		margin-top: 40px;
+	}
+
+	.date {
+		font-size: 20px;
+		text-align: left;
+	}
+
+	.box {
+		flex-direction: row;
+		justify-content: space-between;
+
+	}
+
+	.vinyl, .t-shirt {
+		flex-direction: row;
+		justify-content: center;
+	}
+}
