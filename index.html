@@ -5,25 +5,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="parallax.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<title>GOTOMUSIC</title>
 </head>
 <body>
 	<div class="parallax">
+
+
 		<div class="parallax__layer back">
 			<img class='background' src="assets/images/bg-img.jpg">
 		</div>
+
 		<div class="parallax__layer base">
-			<header id="home"> <!--Home Page-->
+
+			<header id="home" class="animate__animated animate__fadeInUpBig"> <!--Home Page-->
 				<div class="container flex-col">
 					<h1>gotomusic</h1>
 					<div class="flex-col">
 						<p>create a landing page for your music</p>
-						<img id="scroll" src="assets/images/arrow-down.png" alt='scroll'>
+						<a href="#huh" class="">
+							<img id="scroll" src="assets/images/arrow-down.png" alt='scroll'>
+						</a>
 					</div>
 				</div>
 			</header>
-			<div class="container desktop">
-				<section id="contact" class="flex-col"> <!-- Second Page-->
+
+			<div class="container desktop" id='huh'>
+
+				<section id="contact" class="flex-col animate__animated"> <!-- Second Page-->
 					<p>we are taking page requests so if you<br>
 					have released music, leave your contact<br> 
 					here and we will get back.</p>
@@ -38,7 +47,9 @@
 					<h2>about</h2>
 					<p>Gotomusic is created by misicians for musicians. Our mission is to help independant artists in India connect with their listeners and a create community around their art.</p>
 				</section>
+
 			</div>
+
 			<footer class="flex-col">
 				<h4 class="logo">gotomusic</h4>
 				<div class="social-media">
@@ -47,8 +58,10 @@
 					<img src="assets/images/instagram-black.png" alt="instagram">
 				</div>
 			</footer>
+			
 		</div>
 	</div>
-
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src='main.js'></script>
 </body>
 </html>
