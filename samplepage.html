@@ -4,9 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="samplepage.css">
+	<link rel="stylesheet" type="text/css" href="nav.css">
 	<title>sample page</title>
 </head>
 <body>
+
 	<nav>
 		<div class="logo"><h1>FLUME</h1></div>
 		<ul class="nav-links">
@@ -22,37 +24,36 @@
 			<div class="second"></div>
 			<div class="third"></div>
 		</div>
-	</nav>
-	<script type="text/javascript" src='nav.js'></script>
-		
+		<script type="text/javascript" src='nav.js'></script>
+	</nav>	
 
-	<div class="wrapper">
-		<header>
-			<img class="cover" src="assets/images/HiThisIsFlume.jpg">
-			<div class="info">
-				<div class='text'>
-					<h1 class="title">HI THIS IS FLUME</h1>
-					<h3 class="date">RELEASED MARCH 20, 2018
-					<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
-				</div>
-				<div class="box">
-					<div class='streaming'>
-						<img src="assets/images/stream_applemusic.png" alt='applemusic'>
-						<img src="assets/images/stream_spotify.png" alt='stream_spotify'>
-						<img src="assets/images/stream_youtube.png" alt='youtube'>
-						<img src="assets/images/stream_soundcloud.png" alt='soundcloud'>
-					</div>
-					<button id='buy-btn'>BUY NOW</button>
-				</div>
+	<header class="wrap">
+		<img class="cover" src="assets/images/HiThisIsFlume.jpg">
+		<div class="info">
+			<div class='text'>
+				<h1 class="title">HI THIS IS FLUME</h1>
+				<h3 class="date">RELEASED MARCH 20, 2018
+				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
 			</div>
-		</header>
+			<div class="box">
+				<div class='streaming'>
+					<img src="assets/images/stream_applemusic.png" alt='applemusic'>
+					<img src="assets/images/stream_spotify.png" alt='stream_spotify'>
+					<img src="assets/images/stream_youtube.png" alt='youtube'>
+					<img src="assets/images/stream_soundcloud.png" alt='soundcloud'>
+				</div>
+				<button id='buy-btn'>BUY NOW</button>
+			</div>
+		</div>
+	</header>
 
-	 	<section class="tracklist">
-	 		<h2 class="heading">TRACKLIST</h2>
-			<ol >
+ 	<section><!--VIDEO-->
+ 		<h2 class="heading">TRACKLIST</h2>
+		<div class="wrap tracklist">
+			<ol>
 				<li>Hi This Is Flume</li>
 				<li>Ecdysis</li>
 				<li>High Beams</li>
@@ -65,59 +66,64 @@
 				<li>71M3</li>
 				<li>Vitality</li>
 			</ol>
-		</section>
+		</div>
+	</section>
 
-		<section>
-			<h2 class="heading">VIDEO</h2>
+	<section><!--VIDEO-->
+		<h2 class="heading">VIDEO</h2>
+		<div class="video wrap">
 			<button id="youtube">
-				<img id="video" src="assets/images/maxres.jpg">
+				<img id="thumbnail" src="assets/images/maxres.jpg">
 				<img id="play-btn" src="assets/images/youtube-play-btn.png" width="100">
 			</button>
-		</section>
+		</div>
+	</section>
 
-		<section>
-			<h2 class="heading">MERCH</h2>
-			<div class="merch">
-				<div class="t-shirt">
-					<div class="merch-item">
-						<img src="assets/images/FLume_BlueLogo.png">
-						<h2>Blue Logo T-Shirt</h2>
-						<h3>20.00$</h3>
-					</div>
-
-					<div class="merch-item">
-						<img src="assets/images/FLUME_Diamond.png">
-						<h2>Diamond T-Shirt</h2>
-						<h3>16.99$</h3>
-					</div>
+	<section><!--MERCH-->
+		<h2 class="heading">MERCH</h2>
+		<div class="wrap merch">
+			<div class="t-shirt">
+				<div class="merch-item">
+					<img src="assets/images/FLume_BlueLogo.png">
+					<h2>Blue Logo T-Shirt</h2>
+					<h3>20.00$</h3>
 				</div>
-				<div class="vinyl">
-					<div class="merch-item">
-						<img src="assets/images/Flume_Mixtape.png">
-						<h2>Hi This Is Flume LP Vinyl</h2>
-						<h3>28.00$</h3>
-					</div>
 
-					<div class="merch-item">
-						<img src="assets/images/Flume_Skin.jpg">
-						<h2>Skin LP Vinyl</h2>
-						<h3>22.50$</h3>
-					</div>
+				<div class="merch-item">
+					<img src="assets/images/FLUME_Diamond.png">
+					<h2>Diamond T-Shirt</h2>
+					<h3>16.99$</h3>
 				</div>
 			</div>
-		</section>
+			<div class="vinyl">
+				<div class="merch-item">
+					<img src="assets/images/Flume_Mixtape.png">
+					<h2>Hi This Is Flume LP Vinyl</h2>
+					<h3>28.00$</h3>
+				</div>
 
-		<footer>
-			<h2 class="heading">MORE</h2>
-			<button id="more">MORE MUSIC</button>
-			<h3 id="share">SHARE</h3 >
+				<div class="merch-item">
+					<img src="assets/images/Flume_Skin.jpg">
+					<h2>Skin LP Vinyl</h2>
+					<h3>22.50$</h3>
+				</div>
+			</div>
+			<button class='button' id="purchase">PURCHASE</button>
+		</div>
+	</section>
+
+	<footer>
+		<h2 class="heading">MORE</h2>
+		<div class='wrap more'>
+			<button class='button' id="more">MORE MUSIC</button>
+			<h3 id="share">SHARE</h3>
 			<ul>
 				<div><img src="assets/images/share-fb.png"></div>
 				<div><img src="assets/images/share-twitter.png"></div>
 				<div><img src="assets/images/share-insta.png"></div>
 				<div><img src="assets/images/share-tumbler.png"></div>
 			</ul>
-		</footer> 
-	</div>
+		</div>
+	</footer> 
 </body>
 </html>
