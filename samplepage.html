@@ -3,19 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="samplepage.css">
-	<link rel="stylesheet" type="text/css" href="nav.css">
 	<title>sample page</title>
 </head>
 <body>
-
+	<span class="logo"><h1>FLUME</h1></span>
 	<nav>
-		<div class="logo"><h1>FLUME</h1></div>
 		<ul class="nav-links">
+			<li><a id="mail-link" href="#"><img src="assets/images/mail.png"></a></li>
 			<li><a id="apple-link" href="#"><img src="assets/images/apple.png"></a></li>
 			<li><a id="spotify-link" href="#"><img src="assets/images/nav-spotify.png"></a></li>
 			<li><a id="youtube-link" href="#"><img src="assets/images/nav-youtube.png"></a></li>
-			<li><a id="mail-link" href="#"><img src="assets/images/mail.png"></a></li>
 			<li><a id="twitter-link" href="#"><img src="assets/images/share-twitter.png"></a></li>
 			<li><a id="insta-link" href="#"><img src="assets/images/share-insta.png"></a></li>
 		</ul>
@@ -26,7 +26,6 @@
 		</div>
 		<script type="text/javascript" src='nav.js'></script>
 	</nav>	
-
 	<header class="wrap">
 		<img class="cover" src="assets/images/HiThisIsFlume.jpg">
 		<div class="info">
@@ -45,7 +44,7 @@
 					<img src="assets/images/stream_youtube.png" alt='youtube'>
 					<img src="assets/images/stream_soundcloud.png" alt='soundcloud'>
 				</div>
-				<button id='buy-btn'>BUY NOW</button>
+				<button class="button" id='buy-btn'>BUY NOW</button>
 			</div>
 		</div>
 	</header>
@@ -71,11 +70,10 @@
 
 	<section><!--VIDEO-->
 		<h2 class="heading">VIDEO</h2>
-		<div class="video wrap">
-			<button id="youtube">
-				<img id="thumbnail" src="assets/images/maxres.jpg">
-				<img id="play-btn" src="assets/images/youtube-play-btn.png" width="100">
-			</button>
+		<div class="wrap video">
+			<div class="video-container">
+				<iframe id='youtube_video' src="https://www.youtube.com/embed/7TML_MTQdg4?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 		</div>
 	</section>
 
