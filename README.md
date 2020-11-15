@@ -5,20 +5,20 @@ create a landing page for your music
 
 ### command line  
 #### Clone repository  
-$ git clone https://github.com/bekatru/gotomusic.git
+>git clone https://github.com/bekatru/gotomusic.git
   
 #### Enter the repo directory  
-$ cd gotomusic  
+>cd gotomusic  
   
 #### Install dependencies  
-$ npm install  
+>npm install  
   
 #### Start local host  
-$ start live-server  
+>start live-server  
   
 #### **or**
 
 #### Open the index.html  
-$ start index.html  
+>start index.html  
   
 #### PROFIT
