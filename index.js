@@ -4,7 +4,7 @@ const scroll = () => {
 	let contact = document.getElementById('contact');
 	let contactPoint = contact.offsetTop / 2;
 	let about = document.getElementById('about');
-	let aboutPoint = about.offsetTop / 1.5;
+	let aboutPoint = about.offsetTop / 2;
 
 	let scrollPos = parallax.addEventListener('scroll', function(ev){
 		let a = ev.target.scrollTop;
