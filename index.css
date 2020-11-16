@@ -274,6 +274,7 @@ button {
 
 
 footer {
+	justify-content: center;
 	height: 20vh;
 }
 
