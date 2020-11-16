@@ -215,7 +215,8 @@ button {
 
 .heading {
 	position: absolute;
-	left: 25px;
+	transform: translate(-50%);
+	left: 50%;
 	font-size: 30px;
 	font-weight: 400;
 }
@@ -362,18 +363,17 @@ footer {
 	width: 300px;
 }
 
-.more ul div {
+.share-icons {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 	height: 60px;
 	width: 60px;
 	border: 1px solid;
 	border-radius: 50%;
 }
 
-.more img {
+.share-icons img {
 	width: 40px;
 }
 
